@@ -1,0 +1,13 @@
+Ahora que hemos definido que significar "acercarse" a un número en una función, podemos entenderlas más profundamente. Notemos que los conceptos [[Límite finito de Funciones]]  y [[Límite Infinito de Funciones]] son muy importante porque $\lim_{x \rightarrow a} f(x) = l$ significa que todos los valores "cercanos" a $x=a$ estan "cerca" de $f(x) = l$, esto es muy útil porque antes lo único que podíamos hacer para endender que estaba ocurriendo en las funciones es evaluarlas. 
+Sin embargo, debemos notar que el límite no nos dice nada con respecto a que ocurre exactamente en $x=a$ _nos dice que ocurre en los números "alrededor" de $a$_. Si ahora decimos que estos valores que están cercanos a $a$ sea aproximan a $f(a)$ decimos que la función es **continua**. Intuitivamente decir que algo es "continuo" quiere significar que no tiene huecos o espacios, es todo una misma línea fina. 
+
+> #Definición **(Continuidad en un punto)** Dada una función $f: A \rightarrow \mathbb{R}$ con $A \subseteq \mathbb{R}$ decimos que una función es continua en un $a \in A$ cuando todo valor $x \in A$ que elegimos como "cercano a $a$", entonces $f(x)$ va a estar "cercano" a $f(a)$. En símbolos, $$\lim_{x \rightarrow a} f(x) = f(c)$$
+
+Un gran ejemplo de una función que no es continua en ningún punto es la llamada **Función de Dirichlet** que esta definida como
+ $$g(x) = \begin{cases} 1 & \text{ si } x \in \mathbb{Q} \\
+  0 & \text{ si } x \notin \mathbb{Q} 
+  \end{cases}$$
+Que se ve de la siguiente manera
+  ![[Pasted image 20221125103951.png]]
+Veamos por ejemplo la continuidad en $a= 1/2$. Concideremos una secuencia tal que $x_n \rightarrow 1/2$. Por el teorema de relación (visto en [[Límite finito de Funciones]]) tal que todos los valores de $x_n$ sean racionales, entonces tenemos que $\lim_{n \rightarrow \infty} g(x_n) = 1$. Pero por otro lado, si elegimos $x_n$ sean valores irracionales tenemos que $\lim_{n \rightarrow \infty} g(x_n) = 0$ luego por un colorario que vimos no existe el límite de $g(x)$ para cuando $x$ se aproxima a $1/2$ por lo tanto no es continua. Este proceso se puede generalizar para cualquier punto $a$ tal que la función no es continua en ningún punto. 
+La función $f(x) = {\sin (\frac{1}{x}})$  ya probamos que no tiene límite en 0, entonces no es continua en 0. Pero luego, probamos que la función $f(x) = x \sin(\frac{1}{x})$ si tiene límite en 0 _¿Es continua entonces?_ La respuesta clara es _no porque si bien el límite existe cuando $x \rightarrow 0$ no existe $f(0)$_ Si extendemos nuestro   

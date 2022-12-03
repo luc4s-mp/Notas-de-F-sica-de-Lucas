@@ -1,0 +1,50 @@
+# Definición Inicial de los Números Reales
+__¿Cómo podemos definir exactamente que son los números (en concreto los números reales $\mathbb{R}$ que componen casi todos los números que conocemos)?__ Es muy importante esta pues es el más importante de los [[Conjuntos]] numéricos y es al que nos vamos a dedicar a estudiar en Análisis Matemático.Es difícil definir de manera general que son los números reales, veamos un poco de donde salen historicamente y capaz de esto podremos sacar algo. Los números naturales $\mathbb{N} = \{1,2,3,\dots\}$ ([[N]]) fueron los primeros en aparecer para contar cualquier cosa, sin embargo estos plantean un problema, que es el hecho de que no existe un $x \in \mathbb{N}$ que cumpla que $x+2=1$. 
+
+Para poder resolver esta ecuación, fue necesaria la aparición de los números negativos y el cero (para resolver ecuaciones como $x+3=3$), al conjunto que contiene a los naturales y a los negativos lo llamamos números enteros $\mathbb{Z}$ ([[Z]]). De nuevo esta conjunto tiene otro problema que es que no se pueden resolver ecuaciones como $2x=1$.
+
+Si le pedimos a un estudiante de matematicas elementales que resuleva esta ecuación nos diría que "pasamos el dos dividiendo del otro lado", pero esta frase no tiene nada de matemática formal, lo correcto sería decir que _"multiplicamos por $1/2$ (un medio o también llamado el inverso de 2) de ambos lados de la ecuación"_ tal que usamos una propiedad de la igualdad que es la de **uniformidad**.  El conjunto que incluye a todos "inversos" de los número enteros (menos el 0) lo llamamos el conjunto de los números racionales $\mathbb{Q}= \{\frac{m}{n}: m,n \in \mathbb{Z}\}$ (en general se dice que un número es racional cuando se puede escribir como una fracción de eneteros). Por último estos tienen un problema que es que no existen no existe un número racional tal que $x^2=2$. De aquí nacen un conjunto de números muy raro que son los **irracionales**, que usted ya conocerá que son números con infinitos decimales. ¿Cómo podemos estar tan seguros de que no existe un número con finitos decimales que cumpla la ecuación? Porque podemos probarlo. 
+
+> **Proposición.** No existe número racional $x \in \mathbb{Q}$ el cual cumpla $x^2 = 2$.
+
+**Demostración.** Cualquier número racional es cualquier número que se puede escribir como $p/q$ con $p,q \in \mathbb{Z}$. Queremos encontrar que no importa que $p$ y $q$ eligamos, nunca va a ser el caso que $(p/q)^2 = 2$. Para atacar este problema lo vamos a hacer de forma indirecta, demostraremos que lo contario nunca ocurre, es decir que existen unos $p$ y $q$ tal que su cuadrado es igual a 2. Eventalmente llegaremos a que esto es imposible llegando a un resultado ilógico, este tipo de prueba es muy común y se llama _demostración por contradición o el absurdo_. 
+Entonces, supongamos que si existen unos $p$ y $q$ tal que $(p/q)^2 =2$, aumanos también que $p$ y $q$ no tinenen factores comunes, pues entonces se podrían reducir a una fracción más simple. Luego, $2q^2=p^2$ y $p^2$ es un número par (pues es divisible por 2, [[Divisibilidad]]) entonces, $p$ también debe ser par pues la multiplicación de dos pares da par. Como $p$ es par lo podemos escribir como $p = 2r$ con un $r \in \mathbb{Z}$. Luego, reemplazando en la ecuación $4r^2 = 2q^2 \rightarrow 2r^2 = q^2$. De esta manera llegamos a una absurdez,  pues entonces $q$ es par también y empazamos asumiendo que no existía factor común entre $q$ y $p$. Esta "absudez" vino de conciderar que sí existen dos valores $p$ y $q$, entonces probamos que es **imposible** que existan. $\blacksquare$ 
+
+tSabemos que $\mathbb N \subset \mathbb Z \subset \mathbb Q \subset \mathbb R$ por definición. Pero, ¿Cómo exactamente los números racionales [[Q]] entran en los números reales? Esta es una pregunta importante debido a que los números irracionales $\mathbb R - \mathbb Q$ son totalmente arbitrarios, es decir no podemos predecir cuando nos vamos a encontrar un número irracional o crear reglas que determinen a los mismos. 
+Podemos decir que para crear a los números reales llenamos los pequeños espacios en la recta real en los que se encuentran los números irracionales, pero no es una definición formal. También podemos decir que concideramos a un número real a cualquier número que siga los [[Axiomas (Básicos) de los números reales]]. 
+
+El axioma capaz más importante que distingue a los números reales de los números racionales es el [[Axioma del supremo y el ínfimo]] que nos sirve para entender mejor como funcionan los llamados subconjuntos en R y que no poseen ningún "hueco" en su interior.
+
+Vamos a definir dos operaciones básicas en $\mathbb{R}$ y a partir de ellas, vamos a mencionar otros axiomas básicos de los números reales. 
+$$\begin{array}  ++, \; \mathbb{R} \times \mathbb{R} \implies \mathbb{R} \;\;\;\; [(a, b) \rightarrow a+b] \\ \cdot, \; \mathbb{R} \times \mathbb{R} \implies \mathbb{R} \;\;\;\; [(a, b) \rightarrow a \cdot b ]\end{array}$$
+Otra operación muy importante que también veremos será la  relación de equivalencia (vista en [[Relaciones entre conjuntos]]) o la igualdad entre dos elementos de $\mathbb{R}$ (representado por el símbolo $=$ ). La cual cumple las siguientes propiedades:
+- Propiedad simétrica: $a = a, \; \forall a \in \mathbb{R}$ 
+- Propiedad reflexiva: $a = b \implies b = a, \; \forall a, b \in \mathbb{R}$ 
+- Propiedad transitiva: $a = b \wedge b = c \implies a = c, \; \forall a, b, c \in \mathbb{R}$ 
+- Propiedad uniforme: $a = b \implies a + c = b+ c$       $a = b \implies a \cdot c = b \cdot c, \;\;\; \forall a, b, c \in \mathbb{R}$ 
+Los axiomas de la suma y el producto se ven en [[Axiomas (Básicos) de los números reales]].    
+
+## Nuestro primer intento de formar los $\mathbb{R}$ 
+Ya vimos que no existe una solución posible para la ecuación $x^2 = 2$ en los números racionales [[Q]]. Entonces, podemos conciderar la opción de expandir $\mathbb{Q}$ para que exista una solución. Notemos que nos basta solamente agregar el número que resuelve a la ecuación que sería $\sqrt{2} \sim 1,41$ porque por ejemplo $2\sqrt{2}$ (que también es irracional) no estaría en el conjunto por lo cual no podemos resolver  $\frac{1}{4}x^2 = 2$ y  $1+\sqrt{2}$ (es irracional) tampoco estaría por lo que no se podría resolver la ecuación $(x - 1)^2 = 2$.  
+
+Buscamos un sistema $\langle R, +_R, \cdot_R \rangle$ el cual sea una extensión de $\mathbb{Q}$ que contenga al elemento $\Delta$ para el cual $\Delta^2 = 2$. Como $R$ tiene que tener unas operaciones binarias cerradas $+_R$ y $\cdot_R$  (es decir que al multiplicar o sumar dos números del conjunto $R$ se obtenga otro elemento del mismo) entonces todos los elementos de la forma $r +_R (s \cdot_R \Delta)$ para $r, s \in \mathbb{Q}$, pertenecen a $R$. Es más la **conmutatividad**, la **asociatividad** y **distributividad** valen para la múltiplicación y la suma en $R$, entonces c
+$$\begin{align}
+(r + s \Delta) \cdot (p + q\Delta) & = [rp + r(q\Delta)] + [p(s\Delta) + (s\Delta)(q\Delta)] \\
+& = rp + (rp + sp)\Delta + sp \cdot \Delta^2 \\
+& \underset{*}{=} (rp+2sq) + (rp+sp) \Delta
+\end{align}$$
+($*$) Como $\Delta^2 = 2$.
+Aparentemente, para cada par ordenado $(r,s)$, donde $r,s \in \mathbb{Q}$, tiene que correspoder a un elemento en $R$. Ahora, sea $S = \{(r,s) | r,s \in \mathbb{Q}\}$, y sea $\alpha : S \rightarrow R$ una función para la cual
+- $\alpha(r, 0) = r$, $r \in \mathbb{Q}$
+- $\alpha(r,s) = r + s\Delta$ 
+
+Entonces podemos decir que $R = \{\alpha(r,s) | r,s \in \mathbb{Q}\}$. Podemos definir a la multiplicación $\cdot_R$ de la siguiente manera: Para todo $r,s,p, q \in \mathbb{Q}$ 
+$$\alpha(r,s) \cdot_R \alpha (p,q) = \alpha(rp + 2sq, rq + sp)$$
+Entonces, 
+$$\alpha(0, 1) \cdot_R \alpha(0,1) = \alpha(0 \cdot 0 + 2 \cdot 1 \cdot 1, 0 \cdot 1 + 0 \cdot 1) = \alpha(2, 0) = 2 \rightarrow \text{ por definición de } \alpha$$
+Por lo cual $\alpha (0,1)$ es la solución de $x^2 = 2$, entonces lo logramos! un conjunto que no solo contiene las soluciones de esta ecuación sino de muchas similares que involucran a $\sqrt{2}$. Inclusive nos podríamos poner a hablar de que existen los inversos en este conjunto de cada elemento y sus opuestos. Por lo cual $R$ es un #Cuerpo , es decir en esta estructura se cumplen las propiedades de conmutatividad, asociatividad, distributividad, existencia del opuesto y neutro. 
+
+Es importante notar que $R$ es un conjunto que tiene a todos los números racionales por lo cual es "más grande" que los números racionales pero a su vez es más chico que los números reales porque si bien resolvimos un problema con una ecuación, existen cientos, miles, millones de ecuaciones que todavía no se pueden resolver como por ejemplo $x^2 = 3$ o $x^2 = 5$. Podríamos argumentar que podemos agregar las soluciones de estas ecuaciones en $R$ pero la verdad es que se vuelve largo, ya que no sabemos en realidad el total de ecuaciones de este tipo que no se pueden resolver en $\mathbb{Q}$, podrían ser infinitas! Vemos entonces que este método no es útil en este caso. Pero se volverá a encontrar con este método al formar a los números complejos [[C]] , que en este caso es útil porque queremos agregar los elementos de únicamente una ecuación $x^2 = -1$.
+
+## $\mathbb{R}$ es un cuerpo ordenado
+Presentamos los axiomas que caracterizan a los números reales en [[Axiomas (Básicos) de los números reales]]  divididos en tres grupos, como axiomas para un conjunto de números $R$ con una suma ' $+$ ', un producto '$\cdot$ ' y un orden ' $<$ ' dados. En el primer grupo están los axiomas que caracterizan a un cuerpo; estos axiomas se refieren exclusivamente a las operaciones de suma y producto. Luego aparecen en un segundo grupo los axiomas que combinados con los anteriores caracterizan a un **cuerpo ordenado**. Finalmente aparece un último axioma, el de completitud, que en este caso está enunciado en términos del orden $<$ presente en $R$ y que junto con todos los anteriores caracteriza a un **cuerpo ordenado completo**. Resulta que hay un único cuerpo ordenado completo: $\mathbb{R}$.

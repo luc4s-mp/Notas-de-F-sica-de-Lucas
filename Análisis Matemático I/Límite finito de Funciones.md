@@ -1,0 +1,1 @@
+Ahora que exploramos más acerca de los límites de sucesiones ([[Sucesión]]), podemos pasar a hablar de funciones más generales, con $f: \mathbb{R} \rightarrow \mathbb{R}$. 

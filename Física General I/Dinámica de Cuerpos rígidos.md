@@ -1,0 +1,23 @@
+# Dinámica de Cuerpos Rígidos
+En [[Cinemática de cuerpos rígidos]] nos dedicamos a estudiar el movimiento de un cuerpo rígido, ahora nos interesaremos en relacionar las causas (fuerzas y torques) con las variaciones que ellas producen en el movimiento de un rígido. Ya que los rígidos son sistemas de partículas nos sirven las ecuaciones que obtuvimos para el [[Momento Lineal]] y el [[Momento Angular y Torque]]:
+$$\frac{d\vec{P}}{dt} = \sum_{i=1}^N \vec{F}_{Ei} \quad \quad \text{y} \quad \quad \frac{d\vec{L}}{dt} = \sum_{i=1}^N \vec{\tau}_{Ei}$$
+Queremos obtener las ecuaciones equivalentes que teníamos para un sistema de partículas (para el momento lineal $\vec{P} = \vec{p}_1 + \vec{p}_2 + \dots + \vec{p}_k = m_1 \vec{v}_1 + m_2 \vec{v}_2 + \dots + m_k \vec{v}_k = M\vec{v}_{CM}$ y para el momento angular $\vec{L} = \vec{L}_1 + \vec{L}_2 + \dots + \vec{L}_k = \vec{r}_{1,O} \times \vec{p}_1 + \vec{r}_{2,O} \times \vec{p}_2 + \dots \vec{r}_{k,O} \times \vec{p}_k$ eligiendo un punto O como centro de momentos).  Sabemos que cada masa de los cuerpos rígidos continuos se expresa por $\delta m_i = \rho \delta V$ y la manera general de expresar el movimiento del rígido en un punto $i$ es $\vec{v}_i =  \vec{v}_0 + \vec{\omega} \times \vec{r}_i$, entonces por la definición de momento lineal en un sistema de partículas tenemos que
+$$\vec{P} = \sum \delta m_i \vec{v}_i = \sum \rho_i \delta V_i(\vec{v}_{CM} +  \vec{\omega} \times \vec{r}_i)$$
+Notemos que elegimos expresar la velocidad relativa del punto i usando el centro de masa, por lo cual este es nuestro centro de momentos. Si hacemos tender el volumen a cero de manera que la sumatoria se vuelve una integral y nos queda
+$$\vec{P} = \int \rho(\vec{v}_{CM} + \vec{\omega} \times \vec{r}_i) dV = \vec{v}_{CM} \int \rho dV + \vec{\omega} \times \int \rho \vec{r}_idV$$
+Ahora, sabemos que $\int \rho \vec{r}_i dV = M$ y $\int \rho \vec{r}_i dV = M\vec{r}_{CM} = 0$ (esto porque elegimos al centro de masa como origen) por lo cual
+$$\vec{P} = M\vec{v}_{CM}$$
+Esta es la misma ecuación que para un sistema de partículas. _¿Podemos intuir que lo mismo ocurrira para el momento angular?_ Pero tenemos que tener en cuenta que además de el cuerpo estár rotando se le puede aplicar una fuerza centrípeta que lo haga moverse en un movimiento circular. Elijamos un punto Q que será nuestro centro de momentos, el vector $\vec{R}_i$ es el vector posición del punto i al origen Q y $\vec{R}_O$ es el vector del centro de masa O al origen Q (veamos que $\vec{R}_i - \vec{R}_O = \vec{r}'$ que es el vector posición desde el centro de masa al punto i), tenemos
+$$\vec{L}_Q = \sum (\vec{R}_i \times \delta m_i \vec{v}_i) = \sum \vec{R}_i \times [\rho_i \delta V_i(\vec{v}_{0} +  \vec{\omega} \times \vec{r}_i)] $$
+Tomando $\delta V_i \rightarrow 0$,
+$$\vec{L}_Q = \int \rho \vec{R}_i \times (\vec{v}_{0} + \omega \times \vec{r}_i)dV = \int \rho \vec{R} \times \vec{v}_{0} dV + \int \rho \vec{R}_i  \times (\omega \times \vec{r}_i)dV$$
+Veamos que en los calculos se ve reflejado lo que deciamos, uno de los terminos depende de la posición del centro de masa y el otro de la velocidad angular (es decir la rotación sobre el eje), notemos que la velocidad de traslación $\vec{v}_0$ es independiente al volumen, entonces la podremos sacar afuera
+$$\int \rho \vec{R}_i dV \times \vec{v}_0 = M\vec{R}_{CM} \times \vec{v}_0 = \vec{R}_{CM} \times M\vec{v}_{CM}$$
+A este termino de la integral lo llamamos **momento angular orbital**. Ahora, si consideramos que $\vec{v}_{CM} = 0$, nos queda el segundo termino de la integral y si volvemos a hacer el calculo de la integral reemplazando $\vec{R}_i = \vec{r}' + \vec{R}_O$ nos queda
+$$\vec{L}_Q = \int \rho \vec{r}'  \times (\vec{\omega} \times \vec{r}')dV \equiv \vec{L}_S$$
+A $\vec{L}_S$ se le denomina **momento angular intrínseco o de spin**. Observemos que el momento angular orbital *depende del centro de momentos elegido* es decir del punto Q, mientras que el momento angular de spin es causado debido al *movimiento de rotación del cuerpo rígido alrededor de un eje que pasa por el centro de masa*, entonces tiene en cuenta como se distribuye la masa en el cuerpo.  
+
+Encontrar la solución de la integral de arriba es un poco compicado por los dos productos vectoriales que están ocurriendo. En su lugar encontramos la solución para el momento de spin de la siguiente manera:
+$$\frac{d\vec{L}}{dt} = \frac{d\vec{L}_O}{dt} + \frac{d\vec{L}_S}{dt} = \sum_{i=0}^N \vec{\tau}_{Ei}$$
+
+> **Ecuación del momento angular para cuerpos rígidos** $$\vec{L}_Q = \vec{L}_S + \vec{L}_O$$
