@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"c8531a9e900827fd","x":-211,"y":-210,"width":400,"height":400,"color":"2","type":"file","file":"Álgebra II/Autovectores y autovalores.md"},
+		{"id":"33db0263a1eb0cc3","x":189,"y":-706,"width":400,"height":415,"type":"file","file":"Álgebra II/Bases Vectoriales.md"}
+	],
+	"edges":[]
+}

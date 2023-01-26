@@ -8,10 +8,13 @@ El caso más simple de movimiento oscilatorio es cuando tenemos un cuerpo de mas
  Lo más sencillo es elegir nuestro sistema de coordenadas **en la posición de equilibrio**. Siempre que el resorte es estirado o comprimido tiende a volver a su posición inicial, si desplazamos el cuerpo hacia la derecha hasta $x = A$ y lo soltamos, la fuerza total y la aceleración son a la izquierda. La velocidad va aumentando hasta llegar a la posición de equilibrio. Luego, el cuerpo se sigue moviendo hacia la izquierda pero su velocidad cada vez es menor ya que ahora tenemos otra fuerza (que resurta de comprimir el resorte) que apunta a la derecha, evidentemente la velocidad se vuelve 0 y pasa luego a aumentar de nuevo en la dirección de la derecha. De esta manera el movimiento se repite indefinidamente a no ser que una fuerza externa actue.
  
  Veamos las siguientes definiciones:
-> **Amplitud**: denotada normalmente como $A$ es la magnitud máxima del desplazamiento con respecto del equilibrio, es decir, el valor máximo de $|x|$ y siempre es positiva. 
+>[!AMPLITUD]
+>**Amplitud**: denotada normalmente como $A$ es la magnitud máxima del desplazamiento con respecto del equilibrio, es decir, el valor máximo de $|x|$ y siempre es positiva. 
 
+> [!PERÍODO]
 > **Período**: denotada normalmente como $T$, es el tiempo que tarda un ciclo.
 
+> [!FRECUENCIA]
 > **Frecuencia**: $f$, es el número de ciclos en la unidad de tiempo. En el SI se miden usando Hertz o $s^{-1}$ . 
 
 La relación que existe entre la frecuencia y el periódo es: $f = \frac{1}{T}$.

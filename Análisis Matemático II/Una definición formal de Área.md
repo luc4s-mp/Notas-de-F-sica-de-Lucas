@@ -11,7 +11,7 @@ Comenzamos con las siguientes definiciones preliminares:
 Notar que una particion $P=\left\{t_{0}, t_{1}, \ldots, t_{n}\right\}$ del intervalo $[a, b]$ parte al intervalo $[a, b]$ en $n$ subintervalos, a saber los subintervalos $\left[a_{1} t_{1}\right],\left[t_{1}, t_{2}\right], \ldots .\left[t_{n-1}, b\right]$ (de alli el nombre de partición).
 
 > #Definición **(Sumas Superiores e Inferiores)** Si $f:[a, b] \rightarrow \mathbb{R}$ es una funcion acotada y si $P=$ $\left\{t_{0}, t_{1}, \ldots, t_{n}\right\}$ es una particion del intervalo $[a, b]$, definimos la suma inferior $s(f, P)$ mediante $$ s(f, P)=\sum_{i=1}^{n} m_{i}\left(t_{i}-t_{i-1}\right) $$donde $m_{i}=\inf \left\{f(t): L \in\left[t_{i-1}, t_{i}\right]\right\}$.
-Definimos tambien la suma superior $S(f, P)$ mediante  $$ S(f, P)=\sum_{i=1}^{n} M_{i}\left(t_{i}-t_{i-1}\right)$$
+Definimos también la suma superior $S(f, P)$ mediante  $$ S(f, P)=\sum_{i=1}^{n} M_{i}\left(t_{i}-t_{i-1}\right)$$
 donde $M_{i}=\sup \left\{f(t): t \in\left[t_{i-1}, t_{i}\right]\right\}$.
 
 Notese que, por ser $f$ acotada en $[a, b]$, lo es tambien en cada subintervalo $\left[t_{i-1}, t_{i}\right]$, luego, para cada $i,\left\{f(t): t \in\left[t_{i}-1, t_{i}\right]\right\}$ es acotado, tanto superiormente como inferiormente y por lo tanto los numeros $m_{i}$ y $M_{i}$ estan bien definidos.

@@ -32,7 +32,8 @@ $$\vec{r}_{1O} \times \vec{F}_1 + \vec{r}_{2O} \times \vec{F}_2 = 0$$
 Obervemos que al igual que del [[Momento Lineal]] deducimos que cuando tenemos dos fuerzas internas en un sistema de dos cuerpos (que se cancelan) están generan que el *"momento lineal se conserve"* ya que $\sum F_i = dP/dt = 0$, de la misma manera podemos ver que en este caso los *momentos de las fuerzas internas se cancelan* por lo cual podríamos llegar a la conclusión de que "algo" nuevo se está conservando.  
 Llamaremos a esta nueva cantidad que se conserva **momento angular** $\vec{L}$  que se define como 
 
-> **Ecuación del momento angular** $$\vec{L} = \vec{r} \times \vec{p} = \vec{r} \times m\vec{v}$$![[Pasted image 20220509171004.png | 300]]
+>[!DEFINICIÓN]
+>**Ecuación del momento angular** $$\vec{L} = \vec{r} \times \vec{p} = \vec{r} \times m\vec{v}$$![[Pasted image 20220509171004.png | 300]]
 
 Esta definición la obtenemos sabiendo que al derivar con respecto al tiempo a los momentos angulares de cada cuerpo, obtenemos los momentos de los vectores fuerzas interiores entre los cuerpos del sistema. Por ejemplo tomemos los momentos angulares de la situación de dos cuerpos que hablamos anteriormente:
 $$\frac{d}{dt}(\vec{r}_{1O} \times m_1 \vec{v}_1 + \vec{r}_{2O} \times m_2 \vec{v}_2) =_! \vec{r}_{1O} \times \vec{F}_1 + \vec{r}_{2O} \times \vec{F}_2 + \vec{v}_1 \times m_1 \vec{v}_1 + \vec{v}_1 \times m_1 \vec{v}_1$$

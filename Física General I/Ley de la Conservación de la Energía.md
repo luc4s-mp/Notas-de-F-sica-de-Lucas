@@ -11,7 +11,7 @@ $$\begin{align}
 =_2 & \; 0 - \int_{C|Q_0}^{Q_1} mg dy \\
 =_3 & \; -mgy_1 + mgy_0
 \end{align}$$
-En (1) lo que hicimos fue separar [[Una definición formal de Área]] en dos partes usando la propiedad de la suma, luego en (2) resolvimos el producto escalar ($\hat{\imath} \cdot \hat{\jmath} = 0$ ya que son perpendiculares y $\hat{\jmath} \cdot \hat{\jmath} = 1$ porque son paralelos) y por último en (3) resolvimos la integral usando el segundo [[Teorema Fundamental del Cálculo]] (siendo $Q_0 = x_0 \hat{\imath} + y_0\hat{\jmath}$ y $Q_1 = x_f \hat{\imath} + y_f \hat{\jmath}$ ) para obtener que $W_P = -mgh$ siendo $h = y_f - y_0$, notemos que este resultado es muy parecido a la **energía potencial gravitatoria**. Notemos además que al cancelerarse la primera integral, entendemos que la energía potencial gravitatoria depende _únicamente del eje $y$_. 
+En (1) lo que hicimos fue separar la integral en dos partes usando la propiedad de la suma, luego en (2) resolvimos el producto escalar ($\hat{\imath} \cdot \hat{\jmath} = 0$ ya que son perpendiculares y $\hat{\jmath} \cdot \hat{\jmath} = 1$ porque son paralelos) y por último en (3) resolvimos la integral usando el segundo [[Teorema Fundamental del Cálculo]] (siendo $Q_0 = x_0 \hat{\imath} + y_0\hat{\jmath}$ y $Q_1 = x_f \hat{\imath} + y_f \hat{\jmath}$ ) para obtener que $W_P = -mgh$ siendo $h = y_f - y_0$, notemos que este resultado es muy parecido a la **energía potencial gravitatoria**. Notemos además que al cancelarse la primera integral, entendemos que la energía potencial gravitatoria depende _únicamente del eje $y$_. 
 
 Ahora analicemos un cuerpo sometido a una fuerza de un resorte (Caso 4 de la tabla):
 $$\begin{align}

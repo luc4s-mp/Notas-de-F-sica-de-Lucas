@@ -131,4 +131,4 @@ Uno de los productos cartesianos más conocidos es quizás $\mathbb{R} \times \m
 > 2. $(A \cap B) \times X = (A \times X) \cap (B \times X)$
 > 3. $(A-B) \times X = (A \times X) - (B \times X)$
 
-Notemos que el producto cartesiano, **no es conmutativo ni distributivo ni asociativo**. 
+Notemos que el producto cartesiano, **no es conmutativo ni asociativo**. 

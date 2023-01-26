@@ -17,7 +17,7 @@ Notemos que lo que nos está diciendo esta ley es que dadas dos masas $m_1$ y $m
 ![[Pasted image 20220415084910.png | 400]]
 Notemos que $\vec{r}_{12} = \vec{r}_2 - \vec{r}_1$ , en este caso nos conviene elegir un sistema de coordenadas polares ya que normalmente ocurre que los cuerpos están orbitando a la tierra o la tierra está orbitando el sol etc. Sabemos que la fuerza es proporcional al producto de fuerzas $F \propto m_1 m_2$ y que la fuerza es inversamente proporsional al cuadrado de la distancia $F \propto \frac{1}{(\vec{r}_{12})^2}$. Ahora definamos el versor $\hat{r}_{12} = \frac{\vec{r}_{12}}{|\vec{r}_{12}|}$ y el versor $\hat{r}_{21} = \frac{\vec{r}_{21}}{|\vec{r}_{21}|}$. Newton encontró que la proporcionalidad entre la fuerza y las masas estaba definida por una constante $G \simeq 6,67 \times 10^{-11} \quad \text{Nm}^2 / \text{kg}^2$ , llamada **constante de gravitación universal** que se puede determinar con el experimento de Cavendish. La fuerza $\vec{F}_{12}$ entonces nos queda
 $$\vec{F}_{12} = - G \frac{m_1 m_2}{r_{12}^2}(\hat{r}_{12})$$
-Otra manera bastante util de realizar esto es utilizar un sistema de coordenadas que tenga su origen en alguna de las dos masas y ahí el versor que usariamos en expresión es $\hat{u}_{\rho}$ . 
+Otra manera bastante útil de realizar esto es utilizar un sistema de coordenadas que tenga su origen en alguna de las dos masas y ahí el versor que usaríamos en expresión es $\hat{u}_{\rho}$ . 
 Lo cierto es que esta fuerza para dos masas no tan grandes, como la de dos personas, la gravedad no es perceptible.
 
 ## Tiro Vertical a gran altura
@@ -51,4 +51,21 @@ es decir, si
 $$\frac{1}{r} < \frac{1}{r_0} - \frac{v_0^2}{2GM_T}$$
 el radio máximo al cual el proyectil puede llegar al ser lanzado verticalmente es
 $$r_{\text{máx}} = \frac{1}{\frac{1}{r_0} - \frac{v_0^2}{2GM_T}}$$
+
+## Peso
+El peso es la fuerza gravitacional hecha por la tierra a un cuerpo. A la superficie de la tierra, el peso de masa $m$ es
+$$\vec{P} = -G\frac{M_Tm}{R_T^2}\hat{r} = m\vec{g}$$
+Nuestra definición de peso es precisa. De acuerdo a esta definición el peso de un cuerpo _no es afectado por su movimiento_. Pero existe otra definición, más comúnmente reconocida en la cual el peso es la magnitud de una fuerza sobre un cuerpo que debe ser ejercida por su entorno para mantener al cuerpo bajo la influencia de la gravedad. El siguiente ejemplo muestra la diferencia entre las dos definiciones
+
+### Ejemplo. Tortuga en un Ascensor 
+Una tortuga de masa $M$ se encuentra sobre un ascensor que está acelerando hacia arriba a una aceleración $a$. Encuentre $N$ que es la fuerza ejercida sobre la tortuga por el suelo del ascensor. 
+Las fuerzas actuando sobre la tortuga claramente son la normal $\vec{N}$ y el peso $\vec{W} = M\vec{g}$, como todo ocurre sobre un eje $y$ podemos expresar todas las fuerzas en una única ecuación:
+$$N - Mg = Ma \quad \rightarrow \quad N = M(g+a)$$
+Este caso demuestra nuestra dos definiciones de peso. En el caso del peso definido por la ley de gravitación, es el peso de la tortuga $Mg$, que es independiente del movimiento. Por otro lado, nuestra otra definición nos dice que el peso es la fuerza ejercida por el elevador en la tortuga, entonces si midiéramos la fuerza que se le ejerce a la tortuga sería $N = M(g+a)$. Lo que esta definición nos dice es que el peso de la tortuga incrementa cuando el ascensor acelera hacia arriba (porque $a$ es cada vez más grande) y decrece si el ascensor acelera hacia abajo. Si el ascensor cae en caída libre, entonces $a = -g$ y tenemos que $N = 0$ es decir que la tortuga se eleva del piso y empieza a "flotar" dentro del ascensor. 
+
+Esto es lo que los astronautas utilizan para simular la "gravedad cero" que hay en el espacio, se suben a un avión y hacen que el mismo empiece a caer por su propio peso, generando que el peso de los astronautas "sea nulo". Sin embargo, nuestra otra definición nos dice que el peso de los astronautas es siempre el mismo, nunca cambia, lo que hicimos en realidad fue que el entorno nos modificara nuestra medición del peso.
+
+En general utilizaremos la definición formal de peso, $\vec{P} = M\vec{g}$.
+
+---
 
