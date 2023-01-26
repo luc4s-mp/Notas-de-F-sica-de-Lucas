@@ -1,10 +1,7 @@
+# Notas de Álgebra II
+**(NEF)** No Entra en Final.
+
 # Espacios Vectoriales
-En la Física (más específico en [[Vectores]]) introducimos el concepto de **vector** como aquel objeto geométrico que proviene de darle sentido a un segmento definido por dos puntos $A$ y $B$ tal que $\overrightarrow{AB} \neq \overrightarrow{BA}$, o como un elemento que tiene tres componentes: una **amplitud**, una **dirección** y un **sentido** tal que se podían describir como un punto en $\mathbb{R}^2$ o $\mathbb{R}^3$. 
-
-Sin embargo, en el Álgebra se definen los **espacios vectoriales** donde sus elementos se llaman "vectores" aunque no parecieran tener nada que ver con las definiciones previas que teníamos de vector. Resulta que los conjuntos $\mathbb{R}^2$, $\mathbb{R}^3$, $\mathbb{R}[x]$ (el conjunto de todos los [[Polinomios Generalizados]]), $\mathbb{C}^2$, $\mathbb{C}^3$, $\mathbb{Z}^3_{11} = \{(c_1, c_2, c_3) : c_i \in \mathbb{Z}_{11}, \;  i = 1,2,3\}$, entre otros, tienen características en común o parecen venir de la misma estructura. 
-
-Observemos que todos los ejemplos dados anteriormente, vienen de **cuerpos** como $\mathbb{R}$ ([[R]]), $\mathbb{C}$ ([[C]]) y $\mathbb{Z}_{11}$ ([[Enteros Modulares]]), y otro punto que tienen en común es que podemos definir la suma de sus respectivos vectores (recordemos que son los elementos) y esta siempre nos da otro vector dentro del conjunto. Por ejemplo $\mathbb{C}^3 = \{(z_1,z_2,z_3) : z_i \in \mathbb{C}, \; i=1,2,3\}$ definimos la suma como que si $\alpha, \beta \in \mathbb{C}^3$, es decir $\alpha = (z_1,z_2,z_3)$ y $\beta = (z_4,z_5,z_6)$ con $z_i \in \mathbb{C}, \; i = 1,2,\dots, 6$, entonces su suma es $\alpha + \beta = (z_1+z_4, z_2+z_5, z_3+z_6)$ que también pertenece a $\mathbb{C}^3$ pues $z_1 +z_2 \in \mathbb{C}, \; z_2 + z_5 \in \mathbb{C}, \; z_3 + z_6 \in \mathbb{C}$ y podríamos comprobar esto para todos los ejemplos anteriores.
-De la misma manera, podemos notar que si multiplicamos un elemento del cuerpo $\lambda \in \mathbb{C}$ con el que trabajamos con un vector del conjunto $v \in \mathbb{C}^3$, esto también nos da otro elemento del conjunto $\lambda v = (\lambda z_1, \lambda z_2, \lambda z_3) \in \mathbb{C}^3$, y de vuelta esto se cumple para cada conjunto anteriormente mencionado. 
 
 > [!Operación.]
 > #Definición Sea $A$ un conjunto no vacío. Una _operación_ de $A$ es una función $*: A \times A \rightarrow A$.
@@ -12,17 +9,8 @@ De la misma manera, podemos notar que si multiplicamos un elemento del cuerpo $\
 > [!ACCIÓN.]
 > #Definición Sea $A$  y $B$ dos conjuntos no vacíos. Una _acción_ de $A$ en $B$ es una función $\cdot: A \times B \rightarrow A$.
 
-Entonces, podemos decir que para todos los conjuntos anteriores la suma es una **operación** y la multiplicación por $\lambda$ (un número sobre el conjunto en el que estamos trabajando) es una **acción** sobre el conjunto.
-
-Si $V= \mathbb{R}^2 = \{(x,y) ; x,y \in \mathbb{R}\}$ a quien podemos pensar como el _plano cartesiano_, cada uno de los elementos es una **lista** ordenada con largo 2 y si $V = \mathbb{R}^3 = \{(x,y,z): x,y,z \in \mathbb{R}\}$ que puede ser pensado como el espacio de 3D, sus elementos son una lista ordenada de largo 3. Podríamos generalizar que si $V = \mathbb{R}^n = \{(x_1,x_2, \cdots, x_n) : x_i \in \mathbb{R}, \; i = 1, \cdots, n\}$ a que los elementos son una lista ordenada de largo $n$ o en general los matemáticos lo llaman una $n$-tupla. Para $n \geq 4$ es prácticamente imposible visualizar el conjunto. Para $\mathbb{C}^n$ es imposible visualizar nada para $n \geq 2$, pero notemos que a pesar de esto, ***tanto en $\mathbb{C}^n$ como en $\mathbb{R}^n$ se cumplen las mismas propiedades con respecto a la operación suma y a la acción ($\cdot$) de $\mathbb{C}^n$ en $\mathbb{C}$ y  de $\mathbb{R}^n$ en $\mathbb{R}$*** (para cada uno respectivamente) como por ejemplo si $a \in \mathbb{R}$ y $v, w \in \mathbb{R}^n$ ($v = (x_1,x_2, \dots, x_n)$ y $w = (y_1, y_2, \dots, y_n)$) se cumple que 
-$$\begin{align} 
-a \cdot (v + w) &= a \cdot ((x_1,x_2, \dots, x_n) + (y_1, y_2, \dots, y_n)) = a(x_1+y_1, x_2 + y_2, \dots, x_n+y_n) \\
-& = (ax_1+ay_1, ax_2+ay_2, \cdots + ax_n + ay_n) \\
-& = (ax_1, ax_2, \cdots, ax_n) + (ay_1, ay_2, \cdots, ay_n) \\ 
-& = a(x_1,x_2, \dots, x_n) +  a (y_1, y_2, \dots, y_n) = av + aw
-\end{align}$$
-Esta propiedad se cumple también para $\mathbb{C}^n$ y se prueba de forma muy parecida. Podemos entonces darle un nuevo nombre a todos estos conjuntos que cumplen unas ciertas propiedades con respecto a una operación y una acción.
-Podemos generalizar tal que el conjunto $\mathbb{K}$ que es un #Cuerpo (cualquiera) y a cuyos elementos llamamos **escalares** y tenemos otro conjunto $V$ a cuyos elementos llamamos **vectores**, podemos definir un **espacio vectorial** $V$ sobre $\mathbb{K}$.   
+El conjunto $\mathbb{K}$ es un #Cuerpo (cualquiera) y a cuyos elementos llamamos **escalares** y tenemos otr
+o conjunto $V$ a cuyos elementos llamamos **vectores**, podemos definir un **espacio vectorial** $V$ sobre $\mathbb{K}$.   
 
 > [!Espacio Vectorial]
 > #Definición Sea $(\mathbb{K}, + , \cdot)$ un **cuerpo**. Sea $V$ un conjunto no vacío, sea $+$ una operación en $V$ y sea $\cdot$ una acción de $K$ en $V$. Se dice que $(V, +, \cdot)$ es un **$K$-espacio vectorial** si cumplen las siguientes condiciones:
@@ -65,14 +53,12 @@ Notemos que $\mathbb{K}^S$ es la generalización de los ejemplos anteriores $\ma
 # Subespacios 
 Dentro de un $\mathbb{K}$-espacio vectorial ([[Espacios Vectoriales]]) $V$, hay subconjuntos del mismo que heredan la estructura de $V$, es decir, que también son espacios vectoriales con la misma operación, el mismo elemento neutro y la misma acción en $V$. Por ejemplo, tomando $V = \mathbb{R}^2$ tenemos que este es un plano, veamos que el subconjunto $W = \{(2x, -x): x \in \mathbb{R}\}$ es también un espacio vectorial, y es más forma una recta que pasa por el $(0,0)$ (notemos que si no lo hiciera no podría ser un espacio vectorial pues sí o sí tiene que tener un elemento neutro):
 ![[Pasted image 20230103092259.png | 400]]
-Veamos que viéndolo de otra manera podemos reescribir el conjunto como $W = \{x(2,-1): x \in \mathbb{R}\}$ tal que todos los puntos de la recta son "generados" por multiplicar por un escalar al vector $(-2,1)$. Entonces, a estos espacios vectoriales que están dentro de otros los llamamos **subespacios vectoriales**.
+Veamos que podemos reescribir el conjunto como $W = \{x(2,-1): x \in \mathbb{R}\}$ tal que todos los puntos de la recta son "generados" por multiplicar por un escalar al vector $(-2,1)$. Entonces, a estos espacios vectoriales que están dentro de otros los llamamos **subespacios vectoriales**.
 
 > [!Subespacios Vectoriales]
 > #Definición Sea $V$ un $\mathbb{K}$- espacio vectorial. Un subconjunto $S \subseteq V$ no vacío se dice _subespacio de $V$_ si la suma y el producto por escalares  son una operación y una acción en $S$ que lo convierten en un $\mathbb{K}$-espacio vectorial. 
 
 Un ejemplo obvio de un subespacio vectorial de $\mathbb{R}^2$ por ejemplo es $S = \{(0,0)\}$ (lo puede comprobar por usted mismo probando las propiedades de espacio vectorial que tienen que cumplir la operación y la acción, note que es muy parecido a probar que $\{0\}$ es un espacio vectorial). Y también, por lo que vimos en nuestro ejemplo inicial, si $S$ tiene un elemento $v$ no nulo tal que para todo $\lambda \in \mathbb{R}, \;\lambda \cdot v \in S$ y estos son todos los elementos de $S$ entonces $S$ es un subespacio (que gráficamente es una recta que pasa por el origen).
-
-Si realizó el mismo proceso que usábamos para determinar que $V$ es un espacio vectorial, notará que este proceso se vuelve tedioso al repetirlo con los subespacios. Existe un método más sencillo, gracias a que sabemos que estamos dentro de un espacio vectorial donde se cumplen las propiedades, resulta que solo basta con saber que $0 \in S$, $v,w \in S \Rightarrow v+w \in S$ y $\lambda \in \mathbb{K}, \; v \in S \Rightarrow \lambda v \in S$ (esta dos últimas quieren significar que las operaciones de suma y multiplicación por un escalar son cerradas). 
 
 > [!Proposición 1.2]
 > Sea $V$ un $\mathbb{K}$ espacio vectorial y sea $S \subseteq V$. Entonces $S$ es un subespacio de $V$ si y sólo si valen las siguiente condiciones:
@@ -111,7 +97,7 @@ Pasaremos a responder la siguiente pregunta _¿Es la intersección de subespacio
 2. Si $v,w \in W_1 \cap W_2$ entonces $v,w \in W_1$ y $v, w \in W_2$ luego como $W_1$ es un subespacio entonces $v+w \in W_1$ lo mismo para $v+w \in W_2$ luego $v+w \in W_1 \cap W_2$.
 3. Si $v \in W_1 \cap W_2$ y $\lambda \in \mathbb{K}$ entonces $v \in W_1$ y $v \in W_2$ luego como ambos son subespacios tenemos que $\lambda v \in W_1$ y $\lambda v \in W_2$, por lo tanto $\lambda v \in W_1 \cap W_2$. $\blacksquare$ 
 
-Entonces, acabamos de probar que la intersección de subespacios de $V$ nos da otro subespacio. Sin embargo, __la unión de subespacios no necesariamente es subespacio__. Por ejemplo, supongamos que tenemos el espacio vectorial $\mathbb{R}^2$ y los subespacios $S = <(0,1)>$ y $T = < (1,0) >$ [^1], tenemos que $S \cup T$ no es un subespacio pues por la condición (2) en la proposición 1 debería cumplirse que si $v,w \in S \cup T \implies v+w \in S \cup T$, luego $(0,1) \in S$ y $(1,0) \in T$ pero $(1,0) + (0,1) = (1,1) \notin S \cup T$ se puede observar claramente porque este vector no está en el conjunto graficando en un plano $S$ y $T$.  
+**Contraejemplo de la únion.** Entonces, acabamos de probar que la intersección de subespacios de $V$ nos da otro subespacio. Sin embargo, __la unión de subespacios no necesariamente es subespacio__. Por ejemplo, supongamos que tenemos el espacio vectorial $\mathbb{R}^2$ y los subespacios $S = <(0,1)>$ y $T = < (1,0) >$ [^1], tenemos que $S \cup T$ no es un subespacio pues por la condición (2) en la proposición 1 debería cumplirse que si $v,w \in S \cup T \implies v+w \in S \cup T$, luego $(0,1) \in S$ y $(1,0) \in T$ pero $(1,0) + (0,1) = (1,1) \notin S \cup T$ se puede observar claramente porque este vector no está en el conjunto graficando en un plano $S$ y $T$.  
 
 Otros ejemplos interesantes de subespacios salen de analizar el espacio vectorial de funciones (visto en [[Espacios Vectoriales]]) $\mathbb{K}^S$. Notemos que en $\mathbb{R}^{[0,1]}$ podemos decir que el conjunto de todas las funciones continuas ([[Continuidad]]) $W = \{f : [0,1] \rightarrow \mathbb{R} / f \text{ continua }\}$ son un subconjunto del mismo, pero ¿Es un subespacio? 
 - Veamos que $0(x) = 0$ es el elemento neutro del espacio vectorial y es una función continua por lo tanto $0 \in W$. 
@@ -123,12 +109,6 @@ Podemos comprobar que $\{f: [0,1] \rightarrow \mathbb{R} / f'(x) \text{ exista }
 
 
 [^1]: Recordemos que esta notación quiere significar que son los subespacios generados por esos vectores entre los símbolos $<>$, es decir son todos los vectores que resultan de multiplicar a estos por cualquier escalar. 
-
-
-
-
-
-
 
 
 # Sistemas de Generadores
@@ -392,7 +372,7 @@ $$H: \begin{cases}
  puesto que $p$ es una solución de $H$ y $s$ es una solución del sistema homogéneo asociado a $H$. 
  En consecuencia, $y$ es solución de $H$, es decir $y \in M$. $\blacksquare$ 
 
-Sin embargo, es complicado encontrar que un sistema tiene soluciones a simple vista y es más difícil aún es encontrar una solución particular, entonces esta proposición no es tan útil más que para mostrarnos como se estructura el conjunto de soluciones de un sistema no homogéneo. 
+Sin embargo, es complicado encontrar que un sistema tiene soluciones a simple vista y es más difícil aún encontrar una solución particular, entonces esta proposición no es tan útil más que para mostrarnos como se estructura el conjunto de soluciones de un sistema no homogéneo. 
 Observemos que si la única solución del sistema homogéneo asociado es la trivial, tenemos que siendo $p$ una solución particular el conjunto de soluciones es $\{(0,0, \dots, 0) + (p_1, p_2, \dots, p_n)\} = \{(p_1,p_2, \dots, p_n)\}$ es decir el sistema de ecuaciones no homogéneo tiene una **solución única**. 
 
 Para poder encontrar el conjunto de soluciones de un sistema no homogéneo, lo más normal es usar también el método de Gauss (visto en [[Sistemas de Ecuaciones Lineales]] y [[Matrices]]) sobre la _matriz ampliada_.
@@ -413,12 +393,7 @@ a_{m1} & a_{m2} & \cdots & a_{mn}
  \left| \begin{matrix} 
 b_1 \\ \vdots \\ b_m
 \end{matrix} \right)$$ 
-
-
-
  
-
-
 
 # Operaciones con Matrices
 Las matrices tienen una importancia muy grande en el Algebra Lineal, su utilidad va más allá de ser una **simplificación de la información** de los [[Sistemas de Ecuaciones Lineales]] (como vimos en [[Matrices]]). Las Matrices son muy utilizadas en computación, por ejemplo para guardar información. Entonces, es muy útil entender el conjunto de todas las matrices $M_{n\times m}(\mathbb{K})$. 
@@ -500,7 +475,12 @@ Podemos probar que la inversa de una matriz es **única**.
 $$B = I_n B = (CA)B = C(AB) = CI_n = C \quad \blacksquare$$
 Entonces, como sabemos que las inversas de _algunas_ matrices en $M_{n\times n}(\mathbb{K})$ existen, por ejemplo si $A = \begin{pmatrix} 0 & 1 \\ 2 & 0 \end{pmatrix}$ tiene inversa $B = \begin{pmatrix} 0 & 1/2 \\ 1 & 0 \end{pmatrix}$ pues 
 $$AB = \begin{pmatrix} 0 & 1 \\ 2 & 0 \end{pmatrix} \cdot \begin{pmatrix} 0 & 1/2 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} 0\cdot 0 + 1 \cdot 1 & 0 \cdot 1/2 + 1 \cdot 0 \\ 2 \cdot 0 + 0 \cdot 1 & 2 \cdot 1/2 + 0 \cdot 0\end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix}$$
-Podemos definir entonces $GL(n,\mathbb{K}) = \{A \in M_{n\times n}(\mathbb{K}) / A \text{ es inversible }\}$. Se pueden probar de este las siguientes propiedades: 
+Podemos definir entonces
+> [!Grupo lineal general]
+> #Definición Sea $M_{n \times n}(\mathbb{K})$ el conjunto de todas las matrices cuadradas, podemos definir $GL(n,\mathbb{K}) = \{A \in M_{n\times n}(\mathbb{K}) / A \text{ es inversible }\}$. 
+
+
+Se pueden probar de este las siguientes propiedades: 
 
 > [!Proposición 2.]
 > Para cada $n \in N$, se verifican las siguientes propiedades
@@ -518,22 +498,8 @@ $$Entonces $A \cdot B=B^{-1} \cdot A^{-1}$.
 Observemos que las 3 propiedades anteriores más la asociatividad en el producto de matrices, nos dice que $(GL(n, \mathbb{K}), \cdot)$ es una estructura algebraica nueva que llamamos **grupo**, que se llama **grupo lineal general**. 
 En general, para que una estructura sea un grupo es necesario de un conjunto y una operación que cumpla 4 propiedades: cerradura (es decir que si yo opero dos elementos del conjunto me da otro elemento del conjunto), existencia del neutro, existencia del opuesto y asociatividad. 
 
-## Una ojeada a la Teoría de Grupos
-El grupo es una de las estructuras más simples posibles en el álgebra y son ubicuos en la física, principalmente en la mecánica cuántica. Vale la pena detenerse un segundo a analizarlos. Resulta que en los grupos (sobre todo es más fácil de visualizar a los finitos) se mantiene una cierta "simetría" de los elementos. Veamos un ejemplo de esto último muy general, para entender como los grupos pueden encontrarse en todos lados.
-
-Supongamos que tenemos 6 bolitas idénticas $\bigcirc \; \bigcirc \; \bigcirc \; \; \bigcirc \; \; \bigcirc \; \; \bigcirc$ y a cada una le asigno un orden $\bigcirc_1 \; \bigcirc_2 \; \bigcirc_3 \; \; \bigcirc_4 \; \; \bigcirc_5 \; \; \bigcirc_6$ entonces supongamos que yo me armo un conjunto $G$ que contiene todas las posibles permutaciones que le puedo aplicar a estas bolitas (incluida la permutación de no hacer nada), por ejemplo la permutación $g_1: \bigcirc_1 \mapsto \bigcirc_2, \; \bigcirc_2 \mapsto \bigcirc_3, \; \bigcirc_4 \mapsto \bigcirc_4, \; \bigcirc_5 \mapsto \bigcirc_6 \text{ y } \bigcirc_6 \mapsto \bigcirc_5$ pertenece al conjunto y de cierta manera se mantiene la simetría pues a pesar que yo les asignara números a las bolitas si yo las reordeno se ven de igual manera. Algo que rompería la simetría sería por ejemplo asignar $\bigcirc_2 \mapsto \bigcirc_7$ pero la bolita 7 sería una que no existe, por lo tanto esta permutación no esta permitida. Gracias a [[Principios del Conteo]] sabemos que la cantidad de elementos en este conjunto es $6!$. Veamos que ahora yo puedo crear una operación $\otimes$ tal que si $g_i, g_j, g_k \in G, \; g_i \otimes g_j = g_k$  significa "aplicar la permutación $g_i$ y luego $g_j$ nos da lo mismo que directamente aplicar $g_k$". Entonces, se puede probar que $(G,\otimes)$ es un **grupo**. 
-
-La propiedad más complicada de demostrar de que $(G, \otimes)$ es un grupo probablemente sea que de que para toda permutación $g_i$ se puede probar que existe una "permutación inversa" $g_i^{-1}$ tal que al hacer $g_i \otimes g_i^{-1} = id$ donde $id$ es la permutación que "no hace nada", es decir, que los deja como estaban inicialmente. Por ejemplo, la permutación inversa de $g_1$ sería $g_1^{-1}: \bigcirc_2 \mapsto \bigcirc_1, \; \bigcirc_3 \mapsto \bigcirc_2, \; \bigcirc_4 \mapsto \bigcirc_4, \; \bigcirc_6 \mapsto \bigcirc_5 \text{ y } \bigcirc_5 \mapsto \bigcirc_6$   
-tal que al hacer $g_1 \otimes g_1^{-1} = id$ es decir, es como no hacer nada. 
-
-Lo importante a entender de este ejemplo, es el hecho de que en los grupos parece mantenerse una "simetría" en cierta manera. Otros ejemplo de grupo son  $(\mathbb{Z}_n, +)$, visto en [[Enteros Modulares]], o las posibles rotaciones que le puedo realizar a un cubo en el espacio. 
-
-En las matemáticas existe toda un área de estudio dedicada exclusivamente a los grupos llamada "Teoría de Grupos". Probablemente una de las conclusiones más grandes a las que ha llegado esta área de la matemática, (a grandes rasgos) es que todos los grupos parecen venir del mismo lugar y se pueden descomponer en subgrupos  (como si hubiéramos descubierto que las moléculas se pueden separar en átomos). 
-
 ## ¿Cómo obtenemos una inversa?
 Ahora que entendimos bien el comportamiento de un grupo, podemos entender mejor a $(GL(n, \mathbb{K}), \cdot)$. El hecho de que esta estructura sea un grupo es fundamental y un hecho muy utilizado en álgebra lineal al que volveremos continuamente.  
-
-Encontrar la inversa de una matriz no es tan simple como encontrar la inversa de la permutación como vimos arriba. Sin embargo, la idea de que las acciones son "simétricas" en un grupo nos puede ayudar bastante. 
 
 > [!Proposición 3.11.]
 > Sea $e$ una una operación elemental por fila y sea $E \in M_{n \times n}(\mathbb{K})$ sea una _matriz elemental_ $E= e(Id)$ (aplicarle la operación por fila a la identidad). Entonces, para cada $n \times m$ matriz $A$ tenemos que $e(A) = EA$. 
@@ -574,12 +540,6 @@ $$\underset{A^{-1}}{\underbrace{(\tilde{E}_k \cdots \tilde{E}_2 \cdot \tilde{E}_
 entonces encontramos de esta manera la solución del sistema $\vec{x} = A^{-1}\vec{b}$ (recordemos que $\vec{x}$ y $\vec{b}$ son en realidad matrices de una columna y $n$ filas). 
 
 [^1]: Un "pivot" o pivote es el nombre que se le da un valor no nulo en una fila de una matriz, tal que al aplicar el método de Gauss puedo usarlo para hacer los elementos debajo de este 0, aplicando la operación 4 de la proposición vista en [[Sistemas de Ecuaciones Lineales]].  
-> 
-
-
-
-
-
 
 # Espacios Vectoriales Finitos
 Ya vimos en [[Sistemas de Ecuaciones Lineales]] el concepto de **sistemas de generadores** de un espacio vectorial. Que ya vimos que en $\mathbb{R}^2$ tenemos que el subespacio generado por un vector $v$, nos da una recta que pasa por el origen, luego en $\mathbb{R}^3$ si tomamos el subespacio ([[Subespacios]]) generado por dos vectores, tenemos que _muchas veces nos da_ un plano que pasa por el origen y contiene a los dos vectores. Observemos también que el subespacio de soluciones de un sistema de ecuaciones homogéneo (visto en [[Cantidad de soluciones de un SEL]]) de 1 ecuación y 3 incógnitas es también un plano que pasa por el origen, pues está generado por dos vectores.
@@ -706,7 +666,7 @@ De esta manera, una forma clara obtener si una lista de vectores es una base, es
 > [!Corolario. (prop 2.)]
 > Si $A \in M_{n \times n}(\mathbb{K})$ invertible, entonces las columnas de $A$ son LI y forman una base de $\mathbb{K}^n$ 
 
-Un sistema de generadores de un espacio vectorial puede no ser una base porque no es LI. La siguiente proposición dice que cualquier sistema de generadores, puede ser reducida a un conjunto de vectores LI y que sigua generando a todo el espacio vectorial.
+Un sistema de generadores de un espacio vectorial puede no ser una base porque no es LI. La siguiente proposición dice que _cualquier sistema de generadores, puede ser reducida a un conjunto de vectores LI y que sigua generando a todo el espacio vectorial._
 
 > [!Proposición 3.18. Sist. de generadores contiene una base]
 > Sea $v_1, \dots, v_n$ un sistema de generadores de $V$. Entonces, existe un subconjunto $G \subseteq \{v_1, \dots, v_n\}$ que es una base de $V$. 
@@ -724,7 +684,9 @@ Paramos el proceso después del paso $n$, obteniendo la lista $B_n$. El proceso 
 Consideremos $G_0 = <w_1, \dots, w_r>$ un subespacio de $V$. Veamos que podemos definir a un conjunto $G_1 = w_1, \dots, w_r, z_1$ como linealmente independiente si $z_1 \notin G_0$ ó de otra manera si $z_1 \in G_0$ entonces $G_1 = w_1, \dots, w_r$. Podemos repetir este proceso, creando $G_i = G_{i-1} \cup \{z_i\}$ si $z_i \notin G_{i-1}$ ó $G_i = G_{i-1}$ si $z_i \in G_{i-1}$ con cada $G_i, 1 \leq i \leq n$ linealmente independiente, hasta que lleguemos a $G_n$ que nos dice que $V = <z_1, \dots, z_n> \subseteq <G_n>$ y $G_n$ es linealmente independiente. Luego, $G_n$ es una base de $V$. $\blacksquare$ 
 
 Notemos que en toda la nota usamos el concepto de lista en vez de conjuntos, aunque podríamos haberlo hecho, las proposiciones vistas funcionan de igual manera aunque conjuntos en vez de listas. 
+
 Una de las propiedades más útiles de las bases en un espacio vectorial finito $V$ es que nos permiten introducir coordenadas en $V$ análogas a las "coordenadas naturales" de un vector $v = (x_1, x_2, \dots, x_n)$ en un espacio $\mathbb{K}^n$. Si $B = \{v_1, \dots, v_n\}$ es una base de $\mathbb{K}^n$ tenemos que existen únicos coeficientes $a_1, \dots, a_n$ tal que para todo $v  \in V, \; y = a_1v_1 + \dots + a_nv_n$, entonces podemos definir a los coeficientes como "las coordenadas del vector $v$ en la base $B$". Tal que $v = (x_1, x_2, \dots, x_n)$ es un vector en las coordenadas de la **base estándar o canónica**. Notemos que en estos casos, el orden en el que estén los vectores sí importa, pues por ejemplo si cambiamos de orden en la combinación lineal a $v_j$ por $v_j$ entonces tenemos el nuevo vector de coordenadas $(a_1, \dots, a_j, \dots, a_i, \dots, a_n) \neq (a_1, \dots, a_i, \dots, a_j, \dots, a_n)$. Es por esto que usamos listas en vez de conjuntos, pues al hablar de las coordenadas generadas por las bases el orden importa. 
+
 Aquellas bases que se escriben como listas de vectores se las suele llamar **bases ordenadas**. 
 
 # Dimensión de un espacio vectorial
@@ -906,7 +868,7 @@ Fijados dos $\mathbb{K}$-espacios vectoriales $V$ y $W$, tiene sentido considera
 >[!Adición y multiplicación escalar en el conjunto de todas las TL]
 >Dadas $f,g \in \mathrm{Hom}(V,W)$ se define $f+g$ como $(f+g)(x) = f(x) + g(x)$ , $\forall x \in V$. Y el producto $\lambda f$ como $(\lambda f)(x) = \lambda f(x)$. 
 
-Se puede probar que $f+g$ y $\lambda f$ son efectivamente transformaciones lineales y pertenecen a $\mathrm{Hom}(V,W)$. Luego, se puede probar que $\mathrm{Hom}(V,W)$ es un espacio vectorial. 
+Se puede probar que $f+g$ y $\lambda f$ son efectivamente transformaciones lineales y pertenecen a $\mathrm{Hom}(V,W)$. Luego, **se puede probar que $\mathrm{Hom}(V,W)$ es un espacio vectorial.**
 
 
 
@@ -1303,7 +1265,9 @@ con $D^t \in GL(m, \mathbb{K})$ y $C^t \in GL(n, \mathbb{K})$, de donde $\mathrm
 
 [^1]: Matriz transpuesta: si $A \in M_{n \times n}$ entonces $(A^t)_{ij} = A_{ji}$. Visualmente, sería como rotar 90° a la matriz $A$. 
 
-Si bien las [[Transformaciones Lineales]] son un tipo de funciones muy interesante entre [[Espacios Vectoriales]], no son las únicas. Existen otros tipos de funciones muy interesantes que valen la pena estudiar que no son transformaciones lineales. Por ejemplo, $f: \mathbb{R}^2 \rightarrow \mathbb{R}, \; f(x,y) = xy$ no es una transformación lineal. Sin embargo, si fijamos una de sus variables, por ejemplo $x \in \mathbb{R}$ , tenemos que $f(y) = xy$ si es una transformación lineal. Podemos generalizar esto último y hablar de todas las funciones $f: V \rightarrow \mathbb{K}$ con $V$ un $\mathbb{K}$-espacio vectorial finito, y veamos que $f_{w}(\vec{v}) = \vec{v} \cdot \vec{w}$[^1] con $\vec{w} \in V$ fijo y donde $\cdot$ es un [[Producto Interno]]  en $V$[^2],  es una transformación lineal especial llamada **forma lineal**. 
+
+# Formas bilineales y Funciones Multilineales
+Si bien las [[Transformaciones Lineales]] son un tipo de funciones muy interesante entre [[Espacios Vectoriales]], no son las únicas. Existen otros tipos de funciones muy interesantes que valen la pena estudiar que no son transformaciones lineales. Por ejemplo, $f: \mathbb{R}^2 \rightarrow \mathbb{R}, \; f(x,y) = xy$ no es una transformación lineal. Sin embargo, si fijamos una de sus variables, por ejemplo $x \in \mathbb{R}$ , tenemos que $f(y) = xy$ si es una transformación lineal. Podemos generalizar esto último y hablar de todas las funciones $f: V \rightarrow \mathbb{K}$ con $V$ un $\mathbb{K}$-espacio vectorial finito, y veamos que $f_{w}(\vec{v}) = \vec{v} \cdot \vec{w}$[^1] con $\vec{w} \in V$ fijo y donde $\cdot$ es un [[Producto Interno]]  en $V$[^2],  es una transformación lineal especial llamada **forma lineal** o **función lineal**. 
 
 Entonces, se puede probar que una función es una **forma lineal** si el producto en $V$ esta definido de forma tal que se cumple  $\vec{v}, \vec{u} \in V, \; f_w(\vec{v} + \vec{u})$$= (\vec{v} + \vec{u}) \cdot \vec{w}$ $= \vec{v} \cdot \vec{w} + \vec{u} \cdot \vec{w} = f_w(\vec{v}) + f_w(\vec{u})$  y $\lambda \in \mathbb{K}, \vec{v} \in V, \; f_w(\lambda\vec{v}) = (\lambda\vec{v}) \cdot \vec{w} = \lambda(\vec{v} \cdot \vec{w})$ $= \lambda f_w(\vec{v})$ . Para acortar este proceso de demostrar que una función es una forma lineal, basta con demostrar $f(\lambda \vec{v} + \vec{w}) = \lambda f(\vec{v}) + f(\vec{w})$ pues eligiendo $\lambda = 1$ tenemos la primer propiedad y luego eligiendo $\vec{w} = 0$ tenemos la segunda. Ahora, notemos que la función $f_w(\vec{v}) = \vec{v} \cdot \vec{w}$ tiene a $\vec{w}$ fijo, pero si aparte podemos definir $f_{v}(\vec{w}) = \vec{v} \cdot \vec{w}$ con $\vec{v}$ fijo y esta también cumple ser una forma lineal. Entonces decimos que podemos simplemente definir $f(\vec{v}, \vec{w}) = \vec{v} \cdot \vec{w}$ que fijando un vector o el otro es una forma lineal, a esta la llamamos **forma bilineal**.  
 
@@ -1325,7 +1289,7 @@ Empecemos con nuestro desarrollo de definir el determinante. El determinante es 
 **Ejemplo 2.** Supongamos que tenemos la forma bilineal $F: \mathbb{R}^2 \times \mathbb{R}^2 \rightarrow \mathbb{R}$, notemos lo siguiente
 $$\begin{align} F((a,b),(c,d)) & = F((a,0) + (0,b), (c,d)) = F((a, 0) + (0,b), (c,0) + (0,d)) \\ 
 & = a \cdot F((1,0), (c,0)+ (0,d) + b \cdot F((0,1),(c,0)+(0,d)) \\ &= ac \cdot F((1,0),(1,0) + ad \cdot F((1,0),(0,1)) + bc \cdot F((0,1),(1,0)) \\ & \quad + bd \cdot F((0,1),(0,1)) \end{align}$$
-Usando las propiedades de las formas bilineales. Notemos que entonces la función queda determinada por $F((1,0),(1,0)), \; F((0,1),(1,0)), \; F((1,0), (0,1))$ y $F((0,1),(0,1))$. Existe isomorfismo entre $\mathbb{R}^2 \times \mathbb{R}^2$ a $M_{2 \times 2}(\mathbb{R})$ por lo tanto tenemos que de cierta manera, podemos llegar a concluir que al igual que representamos una transformación lineal usando matrices podemos hacer lo mismo con las formas bilineales.
+Usando las propiedades de las formas bilineales. Notemos que entonces la función queda determinada por $F((1,0),(1,0)), \; F((0,1),(1,0)), \; F((1,0), (0,1))$ y $F((0,1),(0,1))$. 
 
 ## Matriz de una forma bilineal
 Supongamos que dada la matriz $A = \begin{pmatrix} 1 & -3 & 2 \\ 0 & 4 & -1\end{pmatrix}$ queremos encontrar una forma bilineal $F: \mathbb{R}^2 \times \mathbb{R}^3 \rightarrow \mathbb{R}$, $F(v, w) = v^t \cdot A \cdot w$ tal que esté expresada solo en las coordenadas de $\mathbb{R}^2$ y $\mathbb{R}^3$, $v = (x_1, x_2)$ y $w = (y_1, y_2, y_3)$, o lo que es lo mismo $v = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}$ y $w = \begin{pmatrix} y_1 \\ y_2 \\ y_3 \end{pmatrix}$ . Notemos que $F$ si es una forma bilineal y lo puede comprobar usando las propiedades de la definición. 
@@ -1431,16 +1395,12 @@ Notemos que el apartado 4 de la proposición anterior nos dice que si existen fi
 Usando las propiedades del Lema 2 tenemos que usando estas propiedades, podemos simplificar el problema de encontrar como se caracterizan funciones multilineales alternadas de más de $n \geq 2$. Pues usándolas, se puede llegar a que se dependen de funciones más simples, reduciendo la cantidad de filas y columnas sucesivamente. 
 Por ejemplo, veamos $f: M_{3 \times 3} (\mathbb{K}) \rightarrow \mathbb{K}$ multilineal alternada tal que $f(Id_3) = 1$. 
 
-De esta manera, lo que hacemos es aplicar las propiedades del lema 2 para obtener funciones más simples, 
-
-A partir de esta proposición, concluimos que el determinante 
-
 El siguiente teorema redefine al determinante como una función **única**.
 
 > [!Teorema 3.47. El determinante es único]
 > Para cada $n \in \mathbb{N}$, existe una **única función multilineal alternanda** de $D: M_{n \times n}(\mathbb{K}) \rightarrow \mathbb{K}$ tal que $D(\mathrm{Id}_n) = 1$.
 
-**Demostración.** Dada $A \in M_{(n+1) \times (n+1)}(\mathbb{K})$ notemos que $A(i|j) \in M_{n \times n}(\mathbb{K})$ es la matriz que se obtiene _al suprimir la fila $i$ y la columna $j$ de $A$_. 
+**Demostración. (No entra)** Dada $A \in M_{(n+1) \times (n+1)}(\mathbb{K})$ notemos que $A(i|j) \in M_{n \times n}(\mathbb{K})$ es la matriz que se obtiene _al suprimir la fila $i$ y la columna $j$ de $A$_. 
 - **Existencia.** Usando el [[Principio de la inducción]] por $n$. 
 	- **(Caso Base)** Para $n=1$, definimos $D: M_{1 \times 1} (\mathbb{K}) \rightarrow \mathbb{K}, D(v) = v$, que es una función multilineal alternada que cumple que $D(1) = 1$.
 	- **(Paso Inductivo)** Supongamos que existe $D_n : M_{n\times n}(\mathbb{K}) \rightarrow \mathbb{K}$ multilineal alternada tal que $D_n(Id_n) = 1$. Definamos $D_{n +1}: M_{(n+1) \times (n+1)}\mathbb{K}) \rightarrow \mathbb{K}$ como $$D_{n+1}(A) = \sum_{i=1}^{n+1} (-1)^{i+1} a_{i1}\cdot D_n(A(i|1)) \quad \text{si } A= (a_{jl})_{1 \leq j,l \leq n}$$ Lo que estamos haciendo acá es suprimir la fila $i$ y la columna 1 lo cual genera una matriz $n \times n$, si a cada una de estas la multiplicamos por su respectivo elemento en $A$ de la primera columna. Probemos que es una función multilineal alternada y que $D_{n+1}(Id_{n+1}) = 1$. Primero veamos que es lineal en cada entrada. 
@@ -1510,4 +1470,99 @@ de donde se deduce que $\det A \neq 0$.
 > [!Corolario 7.1.51.]
 > Si $\det A \neq 0$ entonces $\det A^{-1} = \frac{1}{\det A}$.
  
+
+# Autovalores y Autovectores
+En [[Cambio de Base y Rango de una matriz]] nos concentramos en las [[Matrices Invertibles]], que pertenecen al conjunto de matrices cuadradas $M_{n \times n} (\mathbb{K})$. Ya definimos que existe un claro isomorfismo entre $M_{n \times n}(\mathbb{K})$ y $\mathrm{Hom}(V,V)$ ( con $V$ de dimensión $n$, proposición 4 de [[Matrices de Transformaciones Lineales]]). Por lo tanto, hablar de matrices cuadradas es lo mismo que hablar de transformaciones lineales de espacio vectorial a sí mismo, estas tienen un nombre especial, se llaman **operadores lineales**.
+Desde ahora en adelante trabajaremos con  $\mathbb{K} = \mathbb{R}$ y $\mathbb{K} = \mathbb{C}$. 
+
+> [!Operador Lineal]
+> #Definición Sea $V$ un $\mathbb{K}$[^1]-espacio vectorial. Una transformación lineal de un espacio vectorial a sí mismo, es decir toda $T : V \rightarrow V$, es llamada _operador lineal_. La notación $\mathrm{Hom(V)}$ denota al conjunto de todos los operadores en $V$.
+
+Al igual que no toda matriz cuadrada es invertible, no todo operador lineal es un isomorfismo (es decir, tiene inversa). Observemos que al trabajar con operadores lineales, el corolario 1.1 del [[Teorema de la dimensión]] vale siempre para espacios vectoriales finitos. 
+
+## Subespacios Invariantes
+Supongamos que ya sabemos de antemano que $V = U_1 \oplus \dots \oplus U_m$, es decir que el espacio vectorial $V$ se puede separar en $m$ subespacios con una [[Suma de subespacios]] directa.  Entonces, para entender el comportamiento de un operador lineal $T: V \rightarrow V$ solo necesitamos entender cada $T|_{U_j}$, donde $T|_{U_j}: U_j \rightarrow V$ para cada $j = 1, \dots, m$. Tratar con $T|_{U_j}$ debería ser más sencillo que trabajar con $T$ pues $U_j$ es un espacio vectorial más chico que $V$. 
+Sin embargo, es obvio que no siempre $T|_{U_j}$  va darnos valores dentro de $U_j$, en otras palabras, puede que $T|_{U_j}$ no sea un operador sobre $U_j$. Se pueden obtener resultados muy utiles en el caso en el que sí lo sea. Esto inspira el concepto de  **subespacio invariante**. 
+
+> [!Subespacio Invariante]
+> #Definición Sea $V$ un $\mathbb{K}$-espacio vectorial. Supongamos $T: V \rightarrow V$. Un subespacio $U$ de $V$ es llamado _invariante_ si para cada $u \in U$ ocurre que $T(u) \in U$. 
+
+El siguiente ejemplo muestra la utilidad de esta definición. 
+
+---
+**Ejemplo 1.** Sea $V = \mathbb{R}^2$ con su base canónica $\{e_1, e_2\}$ y supongamos $T \in \mathrm{Hom}(\mathbb{R}^2)$ dada por $T(e_1) = (2,0)$ y $T(e_2) = (1,1)$. Tal que entonces su matriz transformación lineal sea $[T]_E = \begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix}$ y su imagen está generada por $\mathrm{Im}(T) = <(2,0), (1,1)>$. Notemos que el plano cartesiano se puede separar en $\mathbb{R}^2 = U_1 \oplus U_2$ con $U_1 = <e_1>$ y $U_2 = <e_2>$. Notemos que $<e_1>$ genera el eje $x$ tal que $<e_1> = \{x(1,0), \; x \in \mathbb{R}\}$  y alplicarle la transformación tenemos que se genera $<(2,0)>$ sigue siendo el eje $x$, lo único que hicimos fue *multiplicar al vector de la base canónica por $2$ lo cual no modifica el subespacio generado*. Por lo tanto $T|_{U_1} U_1 \rightarrow U_1$, $U_1 = <e_1>$ es un subespacio invariante. Sin embargo, $U_2$ no es un subespacio invariante pues al aplicar la transformación sobre $y(0,1), \forall y \in \mathbb{R}$ (que es el eje $y$) genera $y(1,1), \forall y \in \mathbb{R}$ que ya no es el mismo subespacio, por lo tanto $T|_{U_2} : U_2 \nrightarrow U_2$. 
+
+---
+
+Otros ejemplos de subespacios invariantes son $\{0\}$, $V$, $\mathrm{Nu}(T)$ y $\mathrm{Im}(T)$. 
+
+Resulta que si observamos otras transformaciones lineales, notaremos que los subespacios invariantes ocurren cuando la única modificación que yo le hago a un vector de mi base es _multiplicarlo por un escalar_. Tomemos cualquier $v \in V$ con $v \neq 0$ y sea $U$ un subespacio con todos los múltiplos escalares de $V$: $U = \{\lambda v : \lambda \in \mathbb{K}\} = <v>$. Entonces, $U$ es un subespacio de $V$ de una dimensión. Si $U$ es invariante bajo el operador $T: V \rightarrow V$, luego $T(v) \in U$ por lo tanto existe un escalar $\lambda \in \mathbb{K}$ tal que 
+$$T(v) = \lambda v$$
+Cuando esto ocurre en operadores, llamamos a los vectores que cumplen esto **autovectores** y a las escalares que los acompañan **autovalores**.
+
+> [!Autovalor y autovector] 
+> #Definición Sea $V$ un $\mathbb{K}$-espacio vectorial y $T: V \rightarrow V$ un operador lineal. Un escalar $\lambda \in \mathbb{K}$ es llamado _autovalor_ de $T$ si existe un $v \in V$ llamado _autovector_ tal que $v \neq 0$ y $T(v) = \lambda v$.
+
+Notemos que $v \neq 0$ pues todo escalar cumple $T(0) = \lambda 0$, sin embargo nada impide que $\lambda = 0$.  
+
+La siguiente proposición habla sobre como encontrar autovalores:
+> [!Proposición 1. Condiciones equivalentes para ser un autovalor]
+> **(NEF)** Supongamos $V$ un $\mathbb{K}$-espacio vectorial de dimensión finita, $T: V \rightarrow V$ un operador lineal y $\lambda \in \mathbb{K}$. Recordemos que $Id: V \rightarrow V$ es la transformación identidad. Entonces las siguientes son equivalentes:
+> 1. $\lambda$ es un autovalor de $T$.
+> 2. $T-\lambda  \cdot Id$ no es un monomorfismo.
+> 3. $T- \lambda \cdot Id$ no es un epimorfismo.
+> 4. $T- \lambda \cdot Id$ no es un isomorfismo y por lo tanto no es invertible.
+
+**Demostración.** Las condiciones (1) y (2) son claramente equivalentes pues si $\lambda$ es un autovalor esto significa que existe un $v \in V$ tal que $T(v) = \lambda v \rightarrow T(v) - Id(\lambda v) = 0 \rightarrow (T- \lambda \cdot Id)(v) = 0$. Luego, (2), (3) y (4) son equivalentes por el corolario 1.1 del [[Teorema de la dimensión]].  $\blacksquare$ 
+
+De esta manera, como $T(v) = \lambda v$ si y solo si $(T - \lambda Id)(v) = 0$, entonces tenemos que todos los autovectores de $V$ que corresponden al autovalor $\lambda$ viven en $\mathrm{Nu}(T- \lambda Id)$. Y encontramos nuestra primera manera de obtener autovalores y autovectores, si $\dim( \mathrm{Nu}(T- \lambda Id)) \neq 0$ entonces $\lambda$ es un autovalor de $T$. Otra forma de verlo es pasando las transformaciones a sus respectivas matrices, tal que $[T]_{B_1B_2}$ es la matriz de la transformación lineal, entonces $\lambda$ es un autovalor si $\det([T]_{B_1B_2} - \lambda Id_n) = 0$, pues en ese caso la matriz $[T]_{B_1B_2}- \lambda Id_n$ no es invertible. Sin embargo, quedemos por ahora con nuestra definición inicial y tratemos de dejar de lado el determinante por ahora. 
+
+Al subespacio $\mathrm{Nu}(T- \lambda Id)$ es tan especial que le damos su propio nombre. 
+> [!Autoespacio]
+> #Definición Sea $V$ un $\mathbb{K}$-espacio vectorial y sea $T: V \rightarrow V$ un operador lineal con un autovalor $\lambda \in \mathbb{K}$ . El _autoespacio_ correspondiente a $\lambda$ es un espacio vectorial tal que $$E(\lambda, T) = \mathrm{Nu}(T- \lambda Id)$$ 
+
+Es claro que los autoespacios son subespacios de $V$, pues el núcleo de $T- \lambda Id$ lo es.
+
+---
+**Ejemplo 2.** Sea $T : \mathbb{K}^2 \rightarrow \mathbb{K}^2$ está definida por $T(w,z) = (-z, w)$. Queremos encontrar todos los autovalores y autovectores tomando $\mathbb{K} = \mathbb{R}$ y luego $\mathbb{K} = \mathbb{C}$. 
+
+Notemos primero que la transformación $T$ representa una rotación de 90° de forma antihoraria sobre el origen en $\mathbb{R}^2$. **Un operador tiene un autovalor si y solo si hay un vector no nulo en su dominio que es llevado por el operador a un múltiplo escalar de sí mismo**.  Entonces para encontrar autovalores de $T$, debemos encontrar escalares $\lambda$ tales que $T(w,z) = \lambda (w,z)$ tiene otra solución que no sea $w=z= 0$. Lo cual es equivalente al sistema de ecuaciones $-z = \lambda w$ y $w = \lambda z$. Sustituyendo el valor de $w$ dado por la segunda ecuación en la primera nos da $-z = \lambda^2 z$ o $(\lambda^2 +1)z = 0$ como $z$ no puede ser igual a 0 (pues entonces esto implicaría que $w = 0$) tenemos que $\lambda^2 +1 = 0$. 
+
+Veamos que para $\mathbb{K} = \mathbb{R}$ no existe solución para esta ecuación, lo cual tiene sentido pues implicaría que no existen vectores sobre una línea que se vean multiplicados por un escalar al producir una rotación de $90°$. Sin embargo, si existe una solución para $\mathbb{K} = \mathbb{C}$ y es $\lambda = i$ ó $\lambda = -i$. Luego, se pueden obtener los autoespacios de $\lambda = i$, $\mathrm{Nu}(T- (i)Id) = \{(-z,w) + (iw, iz), \; \forall z, w \in \mathbb{C}\} = <(-1,i), (i, 1)> = <(-1,i)>$ y lo mismo con $\lambda = -i$.  
+
+---
+> [!Lema 2. Autovectores linealmente independientes]
+> **(NEF)** Sea $T: V \rightarrow V$ un operador lineal. Supongamos $\lambda_1, \dots, \lambda_m$ es una lista de autovalores distintos de $T$ y sean $v_1, \dots, v_m$ sus correspondientes autovectores (uno de cada autovalor). Entonces, $v_1, \dots, v_m$ son linealmente independientes.
+
+**Demostración.** Usa el lema 2 de [[Independencia Lineal]] y se inicia pensando por el absurdo que los vectores son LD. $\blacksquare$ 
+
+> [!Corolario 2.1. el número de autovalores]
+> **(NEF)** Supongamos que $V$ es un espacio vectorial de dimensión infinita. Entonces, cada operador lineal en $V$ tiene como máximo $\dim V$ autovalores distintos.
+
+**Demostración.** Sea $T: V \rightarrow V$ un operador lineal con $\lambda_1, \dots, \lambda_m$  autovalores distintos entre sí. Sean $v_1, \dots, v_m$ son sus correspondientes autovectores y por la proposición son LI, entonces por la proposición 1 de [[Independencia Lineal]] tenemos que $m \leq \dim V$. $\blacksquare$ 
+
+Un resultado muy interesante que podemos probar es **la existencia de los autovalores en $\mathbb{C}$**. Resulta, que al calcular los autovalores siempre tengo que encontrar las raíces de un polinomio, como hicimos en el ejemplo 2. Ahora, no siempre existen soluciones para estos polinomios en $\mathbb{R}$ pero podemos estar seguros de que existe al menos una solución en $\mathbb{C}$ gracias al [[Teorema Fundamental del Álgebra]]. Este teorema, plantea justamente que todo polinomio de grado $m$ en los complejos tiene como máximo $m$ raíces. 
+
+## Diagonalización
+Uno de los principales objetivos del Álgebra 2 es mostrar que dado un operador $T: V \rightarrow V$, existe una base de $V$ con respecto a la cual $T$ tiene una matriz razonablemente simple. Esto es porque si bien las [[Matrices de Transformaciones Lineales]] nos simplificaron bastante el entendimiento de las transformaciones lineales, algunas matrices siguen siendo muy complicadas de operar (sobre todo si tienen muchas filas y columnas). Pero vamos a ver que si encontramos la base correcta para expresar la matriz, podemos hacerla mucho más simple, tal que obtener información de ella sea muy simple. 
+Notemos que la forma de matriz más simple, es claramente una matriz diagonal. 
+
+> [!Matriz diagonal]
+> #Definición La matriz _diagonal_ es una matriz cuadrada $n \times n$ tal que las entradas en la diagonal principal sean las únicas no nulas, es decir $a_{ii} \neq 0, \forall i = 1, \dots, n$ pero $a_{ij} = 0$ para $i \neq j$. 
+
+Empecemos ahora nuestro intento para encontrar una forma de encontrar una base tal que al expresar $[T]_B$ sea una matriz diagonal. Empecemos definiendo lo siguiente. 
+
+> [!Matrices semejantes]
+> #Definición Dadas $A, B \in M_{n \times n}(\mathbb{K})$ se dicen semejantes y se denota $A \sim B$ si $\exists C \in GL(n, \mathbb{K})$ (el conjunto de [[Matrices Invertibles]]) tal que $B = CAC^{-1}$
+
+Esta definición tiene sentido, pues multiplicar de ambos lados a una matriz por matrices invertibles no modifica su rango, por lo visto en [[Cambio de Base y Rango de una matriz]]. Se puede probar que la relación semejanza de matrices $\sim$ es una relación de equivalencia ([[Relaciones entre conjuntos]]). Esta definición viene de expresar a un mismo operador en diferentes bases, al hacerlo no modifico la dimensión de la imagen, ni la del núcleo. Entonces, esto motiva la siguiente prueba
+
+> [!Proposición 3.52. Matrices semejantes son un mismo operador en diferentes bases]
+> Sean $A, B \in M_{n \times n}(\mathbb{K})$. Tenemos que $A \sim B$ si y sólo si existe un único operador lineal $T: \mathbb{K}^n \rightarrow \mathbb{K}^n$ con bases $B_1, B_2$ de $\mathbb{K}^n$ tal que $[T]_{B_1} = A$ y $[T]_{B_2} = B$.
+
+**Demostración.** ($\Leftarrow$) Usando la proposición 2 de [[Cambio de Base y Rango de una matriz]] para pasar de la matriz transformación $[T]_{B_1}$ a la matriz $[T]_{B_2}$ usamos la matriz cambio de base $C(B_1,B_2)$ tal que $[T]_{B_2} = C(B_1, B_2)[T]_{B_1}C^{-1}(B_1,B_2)$. Eligiendo $C= C(B_1,B_2)$ y sabiendo que $A = [T]_{B_1}$ y $B= [T]_{B_2}$ entonces $B = CAC^{-1}$. 
+($\Rightarrow$) Supongamos existe una matriz $C$ tal que $B = CAC^{-1}$ tomando $B_1 = E$ (la base canónica) y $B_2$ como las columnas de la matriz $C$, tenemos que $C = C(B_1, B_2)$ es la matriz cambio de base. Definimos $T: \mathbb{K}^n \rightarrow \mathbb{K}^n, \; T(v) = Av$, entonces veamos luego que la matriz asociada a la TL en la base canónica es $A = [T]_{B_1}$, luego la matriz $B$ por la proposición 2 de [[Cambio de Base y Rango de una matriz]] es igual a la matriz $[T]_{B_2}$ tal que $[T]_{B_2} = C(B_1, B_2)[T]_{B_1} C^{-1}(B_1, B_2)$. $\blacksquare$ 
+
+
+[^1]: 
 

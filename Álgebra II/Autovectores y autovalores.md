@@ -85,7 +85,9 @@ Esta definición tiene sentido, pues multiplicar de ambos lados a una matriz por
 > [!Proposición 3. Matrices semejantes son un mismo operador en diferentes bases]
 > Sean $A, B \in M_{n \times n}(\mathbb{K})$. Tenemos que $A \sim B$ si y sólo si existe un único operador lineal $T: \mathbb{K}^n \rightarrow \mathbb{K}^n$ con bases $B_1, B_2$ de $\mathbb{K}^n$ tal que $[T]_{B_1} = A$ y $[T]_{B_2} = B$.
 
-**Demostración.** 
+**Demostración.** ($\Leftarrow$) Usando la proposición 2 de [[Cambio de Base y Rango de una matriz]] para pasar de la matriz transformación $[T]_{B_1}$ a la matriz $[T]_{B_2}$ usamos la matriz cambio de base $C(B_1,B_2)$ tal que $[T]_{B_2} = C(B_1, B_2)[T]_{B_1}C^{-1}(B_1,B_2)$. Eligiendo $C= C(B_1,B_2)$ y sabiendo que $A = [T]_{B_1}$ y $B= [T]_{B_2}$ entonces $B = CAC^{-1}$. 
+($\Rightarrow$) Supongamos existe una matriz $C$ tal que $B = CAC^{-1}$ tomando $B_1 = E$ (la base canónica) y $B_2$ como las columnas de la matriz $C$, tenemos que $C = C(B_1, B_2)$ es la matriz cambio de base. Definimos $T: \mathbb{K}^n \rightarrow \mathbb{K}^n, \; T(v) = Av$, entonces veamos luego que la matriz asociada a la TL en la base canónica es $A = [T]_{B_1}$, luego la matriz $B$ por la proposición 2 de [[Cambio de Base y Rango de una matriz]] es igual a la matriz $[T]_{B_2}$ tal que $[T]_{B_2} = C(B_1, B_2)[T]_{B_1} C^{-1}(B_1, B_2)$. $\blacksquare$ 
+
 
 
 
